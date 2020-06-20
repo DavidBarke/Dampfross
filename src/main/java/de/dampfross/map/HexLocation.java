@@ -1,4 +1,4 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
 
 // Cube coordinates
 public class HexLocation extends HexCoordinates {

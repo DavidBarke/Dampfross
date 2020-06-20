@@ -47,7 +47,7 @@ public class Controller {
         f.add(content);
 
         // ToolBar
-        JToolBar toolBar = new EditToolBar("Typ", content.hexGrid);
+        JToolBar toolBar = new EditToolBar("Typ", content.hexMapController);
         content.add(toolBar, BorderLayout.PAGE_START);
 
         f.setVisible(true);

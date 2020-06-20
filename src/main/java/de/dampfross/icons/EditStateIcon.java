@@ -1,7 +1,7 @@
 package de.dampfross.icons;
 
 import de.dampfross.editor.EditState;
-import de.dampfross.hexgrid.Hexagon;
+import de.dampfross.geometry.Hexagon;
 
 import javax.swing.*;
 import java.awt.*;

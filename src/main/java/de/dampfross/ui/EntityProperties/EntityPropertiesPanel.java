@@ -1,13 +1,13 @@
 package de.dampfross.ui.EntityProperties;
 
-import de.dampfross.hexgrid.HexEntity;
-import de.dampfross.hexgrid.HexGridClickedEntityListener;
+import de.dampfross.map.HexEntity;
+import de.dampfross.map.HexMapClickedEntityListener;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
 
-public class EntityPropertiesPanel extends JPanel implements HexGridClickedEntityListener {
+public class EntityPropertiesPanel extends JPanel implements HexMapClickedEntityListener {
     HexEntity entity;
     LocationPanel locationPanel;
     EdgesPanel edgesPanel;

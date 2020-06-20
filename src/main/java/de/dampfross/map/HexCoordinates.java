@@ -1,4 +1,4 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
 
 public class HexCoordinates implements Comparable {
     public int q;

@@ -1,4 +1,4 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
 
 import de.dampfross.utilities.Distances;
 

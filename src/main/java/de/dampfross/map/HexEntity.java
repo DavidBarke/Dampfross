@@ -1,4 +1,6 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
+
+import de.dampfross.geometry.*;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -39,10 +41,10 @@ public class HexEntity {
         return new HexEntity(entity.coordinateSystem, entity.location);
     }
 
-    public void buildEdges(HexGrid grid) {
+    public void buildEdges(HexMap hexMap) {
         for (HexDirection direction : HexDirection.values()) {
             if (!edges.containsKey(direction)) {
-                HexEntity neighborOrNull = grid.getEntityOrNull(location.getNeighbor(direction));
+                HexEntity neighborOrNull = hexMap.getEntityOrNull(location.getNeighbor(direction));
                 HexEdge edge = new HexEdge(this, neighborOrNull, direction);
 
                 edges.put(direction, edge);

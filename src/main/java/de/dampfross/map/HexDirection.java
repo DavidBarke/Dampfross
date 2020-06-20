@@ -1,4 +1,4 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
 
 public enum HexDirection {
     NORTH_EAST (1, -1, 0),

@@ -1,7 +1,7 @@
 package de.dampfross.editor;
 
-import de.dampfross.hexgrid.HexEdgeType;
-import de.dampfross.hexgrid.HexEntityType;
+import de.dampfross.map.HexEdgeType;
+import de.dampfross.map.HexEntityType;
 
 public enum EditState {
     NONE (null, null),

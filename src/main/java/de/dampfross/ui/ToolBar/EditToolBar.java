@@ -1,25 +1,26 @@
 package de.dampfross.ui.ToolBar;
 
 import de.dampfross.editor.EditState;
-import de.dampfross.hexgrid.HexGrid;
 import de.dampfross.icons.CursorIcon;
 import de.dampfross.icons.EditStateIcon;
+import de.dampfross.map.HexMap;
+import de.dampfross.map.HexMapController;
 
 import javax.swing.*;
 import java.util.HashMap;
 
 public class EditToolBar extends JToolBar {
-    private final HexGrid hexGrid;
+    private final HexMapController hexMapController;
 
     private final ButtonGroup buttonGroup = new ButtonGroup();
 
     private final HashMap<EditState, JToggleButton> editStateJToggleButtonMap = new HashMap<>();
     private final HashMap<ButtonModel, EditState> buttonModelEditStateMap = new HashMap<>();
 
-    public EditToolBar(String name, HexGrid hexGrid) {
+    public EditToolBar(String name, HexMapController hexMapController) {
         super(name);
 
-        this.hexGrid = hexGrid;
+        this.hexMapController = hexMapController;
 
         for (EditState editState : EditState.values()) {
             JToggleButton button;
@@ -36,7 +37,7 @@ public class EditToolBar extends JToolBar {
 
             buttonGroup.add(button);
             button.setFocusPainted(false);
-            button.addActionListener(e -> hexGrid.setEditState(getEditState()));
+            button.addActionListener(e -> hexMapController.setEditState(getEditState()));
         }
 
         // Order matters
@@ -50,7 +51,7 @@ public class EditToolBar extends JToolBar {
 
         editStateJToggleButtonMap.get(EditState.NONE).setSelected(true);
 
-        hexGrid.setEditState(getEditState());
+        hexMapController.setEditState(getEditState());
     }
 
     public EditState getEditState() {

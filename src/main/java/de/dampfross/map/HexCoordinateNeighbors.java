@@ -1,4 +1,4 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
 
 public class HexCoordinateNeighbors {
     private final int NEIGHBORS = 6;

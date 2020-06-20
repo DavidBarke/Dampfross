@@ -1,4 +1,7 @@
-package de.dampfross.hexgrid;
+package de.dampfross.map;
+
+import de.dampfross.map.HexCoordinates;
+import de.dampfross.map.HexLocation;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -12,7 +15,7 @@ public class HexCoordinateSystem {
     // Distance between two hexes that lay on a coordinate axis
     public final double size;
 
-    HexCoordinateSystem(double size) {
+    public HexCoordinateSystem(double size) {
         this.size = size;
     }
 

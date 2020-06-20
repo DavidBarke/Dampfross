@@ -1,6 +1,6 @@
 package de.dampfross.ui.EntityProperties;
 
-import de.dampfross.hexgrid.HexEntity;
+import de.dampfross.map.HexEntity;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;

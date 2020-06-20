@@ -1,7 +1,7 @@
 package de.dampfross.ui.EntityProperties;
 
-import de.dampfross.hexgrid.HexEntity;
-import de.dampfross.hexgrid.HexEntityType;
+import de.dampfross.map.HexEntity;
+import de.dampfross.map.HexEntityType;
 import de.dampfross.icons.EditStateIcon;
 
 import javax.swing.*;
@@ -24,7 +24,11 @@ public class LocationEntityPanel extends JPanel {
 
             buttonGroup.add(button);
             button.setFocusPainted(false);
-            button.addActionListener(e -> entity.setHexEntityType(entityType));
+            button.addActionListener(e -> {
+                if (entity != null) {
+                    entity.setHexEntityType(entityType);
+                }
+            });
         }
 
         add(hexEntityTypeJToggleButtonHashMap.get(HexEntityType.EMPTY));
@@ -35,7 +39,6 @@ public class LocationEntityPanel extends JPanel {
 
     public void setActiveEntity(HexEntity entity) {
         this.entity = entity;
-        System.out.println(entity);
         buttonGroup.setSelected(hexEntityTypeJToggleButtonHashMap.get(entity.getHexEntityType()).getModel(), true);
     }
 }
