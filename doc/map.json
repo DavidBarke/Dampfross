@@ -1,0 +1,18 @@
+{
+  "coordinate_system": {
+    "size": 20
+  },
+  "entities": [
+    {
+      "coordinates": {"q": 0, "r": 0},
+      "edges": [0, 1, 2, 3, 4, 5],
+      "type": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "type": 0
+    }
+  ]
+}
