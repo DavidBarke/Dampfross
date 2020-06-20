@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Dampfross:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Dampfross_jar</output-path>
+    <root id="archive" name="Dampfross.jar">
+      <element id="module-output" name="Dampfross" />
+    </root>
+  </artifact>
+</component>
