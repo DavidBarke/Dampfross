@@ -1,7 +1,7 @@
 package de.dampfross.ui;
 
-import de.dampfross.map.HexMapController;
-import de.dampfross.ui.EntityProperties.EntityPropertiesPanel;
+import de.dampfross.hex.map.HexMapController;
+import de.dampfross.ui.entityproperties.EntityPropertiesPanel;
 
 import javax.swing.*;
 import java.awt.*;

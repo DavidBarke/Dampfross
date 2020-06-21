@@ -1,8 +1,8 @@
 package de.dampfross.geometry;
 
-import de.dampfross.map.HexCoordinateSystem;
-import de.dampfross.map.HexCoordinates;
-import de.dampfross.map.HexDirection;
+import de.dampfross.hex.coordinates.HexCoordinateSystem;
+import de.dampfross.hex.coordinates.HexCoordinates;
+import de.dampfross.hex.coordinates.HexDirection;
 
 import java.awt.geom.Path2D;
 import java.awt.geom.Point2D;
